@@ -1,0 +1,24 @@
+﻿@model List<Restaurant.Models.AddRestaurant>
+<div style="font-size:80px; font-family:Calibri">Restaurant Review Site</div>
+<style>
+    body {
+    background-image:url(http://www.chartwellsschooldining.com/bprts/content/images/plate%20knife%20fork.jpg);
+    } 
+    a { 
+        color: red;
+    }
+</style>
+
+<a class="btn-lg btn-danger" href="/home/Create/">Add A Restaurant</a>
+<table style="margin: 25px;" class="Table table-bordered">
+    <tr><td><strong>Restaurant</strong></td></tr>
+    @foreach (var restaurant in Model)
+    {
+        <tr><td><a href="/home/about/@restaurant.Id">@restaurant.Name</a></td></tr>
+    }
+
+</table>
+@{
+
+}
+

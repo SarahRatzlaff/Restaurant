@@ -1,0 +1,16 @@
+﻿@model Restaurant.Models.AddRestaurant
+<a class="btn btn-danger" href="/home/Index/">Home</a>
+<h1 style="margin:10px;"><strong>Restaurant Details</strong></h1>
+<table class="table table-hover">
+
+    <tr><td> Name: @Model.Name </td></tr>
+    <tr> <td>Cuisine: @Model.Cuisine</td></tr>
+    <tr><td> Rating: @Model.Rating</td></tr>
+    <tr><td> <a class="btn btn-warning" href="/home/Edit/@Model.Id">Edit Restaurant</a></td></tr>
+    <tr><td> <a class="btn btn-success" href="/home/Delete/@Model.Id">Delete Restaurant</a></td></tr>
+</table>
+
+@*Created an a tag that looks like a button*@
+
+
+

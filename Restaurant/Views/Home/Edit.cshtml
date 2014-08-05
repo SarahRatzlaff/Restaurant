@@ -1,0 +1,18 @@
+﻿<a class="btn btn-danger" href="/home/Index/">Home</a>
+<h1 style="margin:10px;"><strong>Edit Restaurant Details</strong></h1>
+<form method="post">
+    <input type="text" name="Name" value="@Model.Name" />
+    <input type="text" name="Cuisine" value="@Model.Cuisine" />
+    <input type="submit" value="Submit" /> <br /><br />
+    @*<input type="hidden" name="Id" />*@
+    Rating:<select name="Rating">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+</form>
+
+
